@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Inventory Management</string>
+    <string name="inventory_management">Inventory Management</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="inventory_overview">Inventory Overview</string>
+    <string name="add_item">Add Item</string>
+    <string name="sms_permission">SMS Permission</string>
+    <string name="this_app_needs_permission_to_send_sms_messages_for_inventory_notifications">This app needs permission to send SMS messages for inventory notifications.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="deny_permission">Deny Permission</string>
+    <string name="item_name">Item Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="delete">Delete</string>
+    <string name="inventory_item_name">Inventory Item Name</string>
+    <string name="item_description">Inventory Item Description</string>
+    <string name="inventory_item_quantity">Inventory Item Quantity</string>
+    <string name="save">Save</string>
+    <string name="increase_quantity">Increase Quantity</string>
+    <string name="decrease_quantity">Decrease Quantity</string>
+    <string name="remove_item">Remove Item</string>
+</resources>
