@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/_32dp">
+    android:paddingVertical="100dp">
+
 
     <EditText
         android:id="@+id/editTextItemName"
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:hint="@string/item_name"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        />
 
     <EditText
         android:id="@+id/editTextItemDescription"
@@ -19,7 +22,8 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:hint="@string/item_description"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/editTextItemQuantity"
@@ -27,7 +31,8 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:hint="@string/quantity"
-        android:inputType="number" />
+        android:inputType="number"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/buttonSaveItem"

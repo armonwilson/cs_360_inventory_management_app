@@ -37,6 +37,7 @@ dependencies {
     implementation libs.appcompat.v170
     implementation libs.material.v1110
     implementation libs.constraintlayout
+    implementation libs.firebase.firestore
     testImplementation libs.junit
     androidTestImplementation libs.junit.v121
     androidTestImplementation libs.espresso.core.v361

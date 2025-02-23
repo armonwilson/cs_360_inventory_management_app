@@ -1,17 +1,16 @@
 package com.example.inventorymanagement;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
-import com.example.inventorymanagement.R;
 
 public class SMSPermissionActivity extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class SMSPermissionActivity extends AppCompatActivity {
         buttonDenyPermission.setOnClickListener(v -> {
             Toast.makeText(SMSPermissionActivity.this, "SMS permission denied", Toast.LENGTH_SHORT).show();
             // Continue without SMS functionality
-            finish(); // Or navigate to the next screen
+            navigateToNextScreen();
         });
     }
 
@@ -43,7 +42,7 @@ public class SMSPermissionActivity extends AppCompatActivity {
         } else {
             // Permission already granted
             Toast.makeText(this, "SMS permission already granted", Toast.LENGTH_SHORT).show();
-            finish(); // Or navigate to the next screen
+            navigateToNextScreen();
         }
     }
 
@@ -56,13 +55,20 @@ public class SMSPermissionActivity extends AppCompatActivity {
                 // Permission granted
                 Toast.makeText(this, "SMS permission granted", Toast.LENGTH_SHORT).show();
                 // Proceed with SMS functionality
-                finish(); // Or navigate to the next screen
+                navigateToNextScreen();
             } else {
                 // Permission denied
                 Toast.makeText(this, "SMS permission denied", Toast.LENGTH_SHORT).show();
                 // Continue without SMS functionality
-                finish(); // Or navigate to the next screen
+                navigateToNextScreen();
             }
         }
+    }
+
+    private void navigateToNextScreen() {
+        // Replace NextActivity.class with the actual class you want to navigate to
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Optional: finish the current activity so the user can't go back to it
     }
 }
